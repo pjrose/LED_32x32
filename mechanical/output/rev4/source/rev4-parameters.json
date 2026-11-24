@@ -1,0 +1,60 @@
+{
+  "panel_size": 191.8,
+  "frame_thickness": 4.0,
+  "border_width": 12.0,
+  "main_cross_width": 10.0,
+  "pcb_branch_width": 8.0,
+  "corner_hole_dx": 86.0,
+  "corner_hole_dy": 83.0,
+  "corner_clear_radius": 13.0,
+  "inner_frame_edge_from_outer": 12.7,
+  "board_inset_from_left_inner_frame": 23.0,
+  "board_seat_z": 4.0,
+  "pcb_thickness": 1.6,
+  "insert_pilot_diameter": 4.0,
+  "insert_pocket_depth": 4.0,
+  "insert_outer_diameter": 4.6,
+  "insert_length": 4.0,
+  "insert_entrance_chamfer": 0.35,
+  "insert_family": "M2.5 heat-set, 4.6 mm OD / 4.0 mm pilot; through bore, preferably 4 mm long",
+  "nut_center_x": 112.9,
+  "nut_hole_spacing": 19.0,
+  "nut_body_length": 42.0,
+  "nut_body_width": 26.0,
+  "nut_body_height": 13.5,
+  "nut_ear_offset_from_body_center": 5.0,
+  "nut_seat_z": 4.0,
+  "matrix_power_connector": [
+    152.66,
+    127.4
+  ],
+  "matrix_hub75_input": [
+    58.39,
+    25.18
+  ],
+  "matrix_hub75_output": [
+    58.39,
+    166.62
+  ],
+  "matrix_capacitors": [
+    [
+      63.15,
+      108.46
+    ],
+    [
+      135.0,
+      64.4
+    ]
+  ],
+  "matrix_power_lead_length": 50.8,
+  "controller_power_lead_length": 100.0,
+  "ribbon_length": 254.0,
+  "notes": {
+    "layout": "Portrait board left and lever connector right. Lever body left long edge touches the right edge of the vertical crossmember. Both lever holes and lower PCB pair remain on the horizontal centerline.",
+    "orientation": "Original rear photo rotated 180 degrees; panel power is at upper right, HUB75 input at lower left. Board component side outward, USB/buttons at bottom, HUB75 at top. This is a 90 degree rotation from rev2 drawing view.",
+    "frame": "Uniform 4 mm thickness throughout, no raised posts. 13 mm radius corner cutouts centered on factory corner inserts.",
+    "inserts": "Six 4.0 mm through bores with top 0.35 mm deep conical lead-ins widening to 4.7 mm. Prefer 4 mm long inserts to keep both faces flush. A 5.7 mm insert seated flush on top protrudes 1.7 mm below the frame; confirm clearance.",
+    "board_inset": "Prior 23 mm inset retained on the left side in this rotated layout, relative to approximately 12.7 mm inner frame edge inferred from drawing.",
+    "lever": "Body translated left by 14.5 mm from V3, without rotation. Left wide-body edge X=100.9 equals the right edge of the vertical 10 mm crossmember. 19 mm ear-hole pitch. 42 x 24 modeled body footprint from reference; actual body envelope is approximate."
+  }
+}

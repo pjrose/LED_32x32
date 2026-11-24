@@ -1,0 +1,23 @@
+{
+  "PRINTING.txt": "af38e23b855b23d45188e3aa8c12d062609a2c828633159a15504c9cc8228be2",
+  "Adafruit-CC-BY-SA-3.0.txt": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+  "rear-frame-v3.stl": "55d1f3b137d158770d5a1ccbcc84accd891e41c6b26395365494c3a43db76df6",
+  "rear-frame-v3.scad": "a95a39101590dfdf4816fce16f74d843294657ba71886e4d42dd92700a5793c4",
+  "m2-5-heat-set-sizing-coupon.stl": "63d01751f0bc51e26f1862fd4213036c17a0e89e2ae11127c38db9a06bf19fbc",
+  "m2-5-heat-set-sizing-coupon.scad": "4133ccd75e58149f91883b5f8618e1848874ffbb74951a139687ec3992f81ad0",
+  "electronics-fit-check-v3.stl": "bdd5cbf2979e421b003ffba6dd4925b361f8c5e117efc08a67117ada030ab6bc",
+  "electronics-fit-check-v3.scad": "6bb11f278467110d88f9f896f69ec396d54d594d003007b9e1be5c690f507ec7",
+  "matrix-rear-frame-v3.blend": "5afaadb347cc465895eaae7b895baead9534c8fca228e562774c68a1b9681c90",
+  "layout-v3-actual-size.svg": "2b4d724b17ae74486745a4acbd166bba3784bf1bafcfb913318f952f3178ffc3",
+  "layout-v3-dimensioned.png": "f8fada290a13a7da87addaf85a141e248d4c6f2234f9ad38b68a502e991a6450",
+  "assembly-v3.png": "ab0e51c134a03c62ed85eaf946bc8fe17d5cc4152f5999049623dc9203f78be7",
+  "printed-frame-v3.png": "08c4867a72f4267d1eff976c7556badd0d124d136317d18efda84c4fb392f7da",
+  "rear-plan-v3.png": "d7356756d2e3cfa751b1f6f39f246e718990d5845cb6b3e3245bf780e221d417",
+  "validation.json": "0a469cd79e1e9745efe0d300598602eea124f965fabfea5c24effd8da4d5e72f",
+  "parameters-used.json": "93c88a030d3b497bc6bbdc226db59216ee7306cf5114e78b5ba27f293a9e93b3",
+  "source/build_mount_v3.py": "cb42abfde735d90227fdfc0358d8bf6dd426fa292150db7250aed69f08771c5b",
+  "source/csg.py": "5671480ff7d2dce2b84717819a1b390c075e1503f6a35bf8132c84a7cfa4915a",
+  "source/draw_layout_v3.py": "db1cc339b5f1f73e17946508cd2feef1f3105bc308919fa6631de49e025c2bb9",
+  "source/requirements.txt": "15c4c20b326f14c77af86c088309c28930c708915480f5a101637699022ee687",
+  "source/rev3-parameters.json": "595ecd7c0471c084c0015da34c5e61761795ebeb35c1e15328f37d7d57c47279"
+}

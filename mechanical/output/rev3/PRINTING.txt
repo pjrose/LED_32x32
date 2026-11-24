@@ -1,0 +1,152 @@
+MATRIX OPEN FRAME - REVISION 3
+
+The frame follows the latest sketch: a continuous border, a centered horizontal
+and vertical cross, and a shorter left branch for the upper PCB mounting pair.
+The lower PCB pair and both lever-connector screw holes share the horizontal
+centerline. Four midpoint M3 screws attach it to the matrix. All four factory
+corner inserts are exposed for your own magnetic standoffs.
+
+PRINT FILES
+
+rear-frame-v3.stl
+  Full frame: 191.8 x 191.8 mm. Border/crossmembers are 4 mm thick.
+  Only the six local insert posts extend to 8 mm overall height.
+  Border width 12 mm; main cross width 10 mm; PCB branch width 8 mm.
+  About 63% open area, excluding the corner cutouts. Solid volume 48.4 cm3.
+
+m2-5-heat-set-sizing-coupon.stl
+  Print this first. Three labeled blind holes: 3.8, 4.0 and 4.2 mm diameter.
+  Same 6.7 mm blind depth and 8 mm base height as the production posts.
+  Default frame pilot is 4.0 mm; use the coupon to check your printer/inserts.
+
+electronics-fit-check-v3.stl
+  Small open skeleton, 108 x 57 x 8 mm, with all six real mounting centers.
+  Check board mounting, lever ears and wire takeoffs with this before the full
+  frame. It is a test piece, not the final mount.
+
+The Blender file is an assembly reference. Print only the object in the
+collection "V3 PRINT - frame only", or use the standalone frame STL.
+Electronics, panel, screws and cable paths are references, not print parts.
+The connector body is approximate. The board mesh is Adafruit's official model.
+
+INSERTS AND SCREWS
+
+Six M2.5 heat-set inserts. This design explicitly targets the common ruthex
+RX-M2.5x5.7 geometry: 4.6 mm outside diameter, 5.7 mm length, 4.0 mm pilot.
+"M2.5" alone does not specify insert outside diameter or length. For another
+insert body, check the coupon and adjust the parameters before the full print.
+
+Each pocket is 6.7 mm deep with a 1.3 mm closed floor. The insert seats flush
+with the top of its 8 mm post. A small entrance chamfer helps it start straight.
+There are no captive hex nuts. The first M3 insert proposal is superseded;
+the printed frame has only M2.5 insert pockets for its six electronics screws.
+
+Nominal hardware starting points:
+  4 x M3 x 8 mm countersunk screws for the panel midpoint inserts.
+    Frame clearance 3.4 mm; 6.4 mm countersink, 1.5 mm deep.
+    About 4 mm screw projection below the frame. Check actual panel thread
+    depth before tightening; the drawing specifies M3 x 5 inserts.
+  4 x M2.5 x 6 mm screws for the PCB's 1.6 mm thickness, no washers assumed.
+    Nominal insert engagement 4.4 mm.
+  2 x M2.5 x 6 mm screws plus thin washers for the lever connector.
+    With assumed 2.2 mm ears and 0.4 mm washers, engagement is 3.4 mm.
+    Actual ear thickness/underside seating height were not supplied: verify
+    screw length and seating on the fit check before choosing longer screws.
+
+The lever has approximately 3 mm bores, so M2.5 screws give about 0.5 mm
+diametral clearance. Its printed insert centers are 19 mm apart. Tighten
+gently after checking that all ears and PCB holes seat without bending.
+
+PRINT AND ASSEMBLE
+
+1. Print the sizing coupon with your final material and settings. Set one
+   insert into each trial pocket; choose the pocket that installs cleanly
+   and holds without cracking. Default frame is the 4.0 mm trial size.
+2. Print the electronics fit-check skeleton. Install inserts, then check all
+   four PCB holes, both lever ears, underside socket clearance and the actual
+   power leads. Some connector/board edges deliberately overhang this sample.
+3. Print the full frame flat side down, posts upward, at 100% scale in mm.
+   Suggested starting settings: PETG, 0.2 mm layers, 4-5 walls, 5 top/bottom
+   layers, 25-35% infill, supports off. The open frame needs no pocket roofs.
+4. Heat-set the six inserts before fitting electronics. Keep them vertical
+   and flush, then let the plastic cool completely before threading screws.
+5. Attach the frame using the four midpoint panel holes. Fit the electronics
+   and harness. The open areas provide access to both HUB75 connectors and
+   the matrix power connector. Two small border notches accept a supply tie.
+6. Install your magnetic standoffs directly in the four factory corner inserts.
+   There is no printed material within 25 mm of each corner-hole center.
+
+Nominal closed lever body reaches 21.5 mm above the panel attachment plane;
+the schematic levers reach about 22.7 mm. The real IDC plug, ribbon bend and
+open lever sweep can require more. Check the assembled hardware before
+selecting magnetic standoff height. No physical load or thermal test was done.
+
+ORIENTATION AND CABLES
+
+Match the latest rear-view drawing: controller on left in portrait orientation,
+USB/buttons at bottom, HUB75 header at top. Lever connector is to the right,
+with four-port end above the centerline and two-port supply end below.
+The panel power connector is at upper right; HUB75 INPUT is at lower left.
+This view rotates the original rear photograph by 180 degrees.
+
+Planar cable centerline estimates (not measured 3D harness lengths):
+  Matrix power:      27.8 mm planned / 50.8 mm available
+  Controller power:  53.2 mm planned / 100 mm available
+  HUB75 ribbon:     219.1 mm planned / 254 mm available
+
+The nominal slack is useful, but plug takeoffs, wire bends and vertical travel
+consume it. Dry-fit actual leads. The ribbon can run around the left of the
+PCB through the open areas. The Blender cable collection is hidden by default;
+enable it for an illustrative route. It is not a bend-radius simulation.
+
+The PCB edge is nominally 23 mm inward from the left inner plastic edge. That
+plastic edge is estimated 12.7 mm from the panel's outside edge. Measure it
+if that inset must be exact. Board hole pitch is 19.685 x 40.64 mm in this view,
+from Adafruit's PCB source. Lever hole pitch is your approximately 19 mm value.
+
+CHECKS AND REMAINING FIT ASSUMPTIONS
+
+All three exported printable STLs reload as watertight solids with consistent
+winding. Each original CSG solid is one connected body. Checks confirm the
+six hole centers, centerline alignment, 1.3 mm pocket floors, four corner
+keepouts, and no intersection with the modeled underside HUB75 female socket.
+The PCB branch edge clears that socket's nominal footprint by about 0.49 mm.
+
+Lever body envelope (42 x 26 x 13.5 mm), ear offset and ear seating are based
+on the similar reference, not a full measurement of your exact connector.
+Panel connector/capacitor positions come from the photos. The inner frame
+edge, insert fit, cable bends, lever sweep and real screw lengths need the
+physical checks above. Geometry validation is complete; physical fit is not.
+
+EDITABLE FILES
+
+source/rev3-parameters.json, build_mount_v3.py, csg.py, draw_layout_v3.py.
+Install source/requirements.txt in Python, then run build_mount_v3.py and
+draw_layout_v3.py. Outputs regenerate in source/output/rev3/.
+The generated OpenSCAD files reproduce the same geometry with baked values;
+change the JSON and regenerate to change dimensions. STL cleanup only removes
+sub-micron CSG slivers introduced by binary STL coordinate rounding.
+
+layout-v3-actual-size.svg is an A4 reference template with electronics/cable
+overlays. Print at 100% and verify its 100 mm calibration line. It is not an
+insert drill jig. The PNG gives the same layout for on-screen review.
+
+REFERENCES AND ATTRIBUTION
+
+User drawing: 1484_P6_192X192mm-32x32pixel_2021 (1).pdf
+User photos, connector image, latest sketch and supplied measurements.
+
+Adafruit MatrixPortal S3 PCB source:
+https://github.com/adafruit/Adafruit-MatrixPortal-S3-PCB
+Adafruit official board 3D model:
+https://github.com/adafruit/Adafruit_CAD_Parts/tree/main/5778%20Matrix%20Portal%20S3
+Board designs credited to Adafruit Industries and Limor Fried/Ladyada.
+PCB source licensed CC BY-SA 3.0; included Adafruit license applies to that
+reference design. The printable frame is original geometry for this request.
+
+Insert product:
+https://www.ruthex.de/en/products/ruthex-gewindeeinsatz-m2-5-70-stuck-rx-m2-5x5-7-messing-gewindebuchsen
+Manufacturer dimensional sheet (hosted by distributor):
+https://www.igo3d.com/mediafiles/Sonstiges/Ruthex/ruthex_Datenblatt_RX-Serie.pdf
+Blind-pocket depth allowance guidance:
+https://www.cnckitchen.com/blog/tips-and-tricks-for-heat-set-inserts

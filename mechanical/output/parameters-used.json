@@ -1,0 +1,44 @@
+{
+  "panel_size": 191.8,
+  "panel_hole_dx": 86.0,
+  "panel_hole_dy": 83.0,
+  "rail_width": 17.5,
+  "plate_thickness": 3.2,
+  "magnet_boss_top": 23.5,
+  "insert_length": 6.0,
+  "insert_pocket_diameter": 4.2,
+  "insert_depth_allowance": 0.4,
+  "nut_hole_spacing": 19.0,
+  "nut_hole_x": 80.0,
+  "nut_center_y": 67.0,
+  "nut_ear_seat_z": 7.4,
+  "nut_body_length": 42.0,
+  "nut_body_width": 26.0,
+  "nut_body_height": 13.5,
+  "nut_ear_underside_above_body_bottom": 0.0,
+  "board_left": 106.0,
+  "board_bottom": 28.0,
+  "board_seat_z": 7.0,
+  "pcb_thickness": 1.6,
+  "board_locator_diameter": 2.1,
+  "board_locator_height": 0.9,
+  "clamp_thickness": 2.4,
+  "photo_power_connector": [
+    39.14,
+    64.4
+  ],
+  "photo_hub75_input": [
+    133.41,
+    166.62
+  ],
+  "ribbon_width": 20.3,
+  "ribbon_length": 254.0,
+  "matrix_power_lead_length": 50.8,
+  "notes": {
+    "panel": "191.80 overall; rear-view corner centers +/-83 horizontally, +/-86 vertically in drawing, rotated 90 degrees to match user photo. Four cardinal holes used to retain carrier; corner factory holes left unused.",
+    "inserts": "M3 thread and 6 mm length supplied by user. Outside diameter NOT supplied; 4.2 mm pilot is a trial value only. Select from coupon and regenerate.",
+    "nut": "19 mm mounting-hole spacing supplied by user. 13.5 interpreted as body height; 42 x 26 footprint and 16 mm two-port-end-to-hole-axis offset from similar reference, not measured on actual connector. Ear underside elevation unknown; zero is conservative for height but must be fit-checked.",
+    "photo_coordinates": "Approximate positions from perspective correction of supplied rear photo; not precision measurements. Carrier has generous connector openings.",
+    "magnetic_studs": "M3 x 5 threaded projection supplied by user. Magnet diameter/body height unknown. Raised bosses hold nominal electronics below 23.5 mm mounting plane; connected IDC plug and wires require physical check. No enclosure or magnetic load test performed."
+  }
+}

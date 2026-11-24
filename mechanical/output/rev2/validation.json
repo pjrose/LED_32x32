@@ -1,0 +1,133 @@
+{
+  "rear-plate-v2": {
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "triangles": 11436,
+    "size_mm": [
+      191.8000030517578,
+      191.8000030517578,
+      8.0
+    ],
+    "volume_cm3": 88.9047904133108
+  },
+  "m2-5-nut-trap-fit-test": {
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "triangles": 1828,
+    "size_mm": [
+      36.0,
+      25.0,
+      8.0
+    ],
+    "volume_cm3": 3.0505387751965802
+  },
+  "electronics-fit-check-v2": {
+    "watertight": true,
+    "consistent_winding": true,
+    "bodies": 1,
+    "triangles": 5568,
+    "size_mm": [
+      95.0,
+      95.0,
+      8.0
+    ],
+    "volume_cm3": 28.380622437770977
+  },
+  "layout": {
+    "orientation": "Rear view matching marked drawing, X right, Y up; 191.8 mm panel.",
+    "panel_mount_holes_mm": [
+      [
+        95.9,
+        9.9
+      ],
+      [
+        95.9,
+        181.9
+      ],
+      [
+        9.9,
+        95.9
+      ],
+      [
+        181.9,
+        95.9
+      ]
+    ],
+    "corner_keepouts_mm": [
+      [
+        12.900000000000006,
+        9.900000000000006
+      ],
+      [
+        12.900000000000006,
+        181.9
+      ],
+      [
+        178.9,
+        9.900000000000006
+      ],
+      [
+        178.9,
+        181.9
+      ]
+    ],
+    "corner_clear_radius_mm": 25.0,
+    "board_lower_left_mm": [
+      92.60000000000002,
+      104.0
+    ],
+    "board_right_edge_mm": 156.10000000000002,
+    "frame_inner_right_edge_assumed_mm": 179.10000000000002,
+    "board_to_right_inner_frame_edge_mm": 23.0,
+    "board_hole_centers_mm": [
+      [
+        100.22000000000003,
+        119.875
+      ],
+      [
+        100.22000000000003,
+        139.56
+      ],
+      [
+        140.86,
+        119.875
+      ],
+      [
+        140.86,
+        139.56
+      ]
+    ],
+    "board_hole_pitch_mm": [
+      40.64,
+      19.685
+    ],
+    "nut_hole_centers_mm": [
+      [
+        73.0,
+        59.5
+      ],
+      [
+        73.0,
+        78.5
+      ]
+    ],
+    "nut_hole_spacing_mm": 19.0,
+    "matrix_power_path_mm": 46.7,
+    "matrix_power_available_mm": 50.8,
+    "controller_power_path_mm": 69.8,
+    "controller_power_available_mm": 100.0,
+    "ribbon_path_mm": 220.4,
+    "ribbon_available_mm": 254.0,
+    "ribbon_reserve_mm": 33.6,
+    "estimated_connector_top_z_mm": 20.2135,
+    "estimated_nut_top_z_mm": 21.5,
+    "nut_trap_mm": {
+      "across_flats": 5.25,
+      "height": 2.3,
+      "bottom_z": 2.4
+    },
+    "status": "Fit-check prototype. Nut body footprint/ear height, frame inner edge, connected plug height and actual cable takeoffs need physical verification."
+  }
+}

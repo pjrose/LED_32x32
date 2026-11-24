@@ -1,0 +1,148 @@
+{
+  "rear-frame-v4": {
+    "watertight": true,
+    "consistent_winding": true,
+    "exported_stl_watertight": true,
+    "connected_bodies": 1,
+    "size_mm": [
+      191.8000030517578,
+      191.8000030517578,
+      4.0
+    ],
+    "volume_cm3": 48.75958780652448,
+    "triangles": 8088
+  },
+  "m2-5-heat-set-sizing-coupon": {
+    "watertight": true,
+    "consistent_winding": true,
+    "exported_stl_watertight": true,
+    "connected_bodies": 1,
+    "size_mm": [
+      44.0,
+      18.0,
+      4.380000114440918
+    ],
+    "volume_cm3": 3.0086533916147022,
+    "triangles": 1608
+  },
+  "electronics-fit-check-v4": {
+    "watertight": true,
+    "consistent_winding": true,
+    "exported_stl_watertight": true,
+    "connected_bodies": 1,
+    "size_mm": [
+      108.0,
+      57.0,
+      4.0
+    ],
+    "volume_cm3": 7.715088994363058,
+    "triangles": 2388
+  },
+  "layout": {
+    "frame_thickness_mm": 4.0,
+    "border_width_mm": 12.0,
+    "main_cross_width_mm": 10.0,
+    "secondary_branch_width_mm": 8.0,
+    "cross_center_mm": [
+      95.9,
+      95.9
+    ],
+    "secondary_branch_y_mm": 136.54000000000002,
+    "panel_mount_centers": [
+      [
+        95.9,
+        12.900000000000006
+      ],
+      [
+        95.9,
+        178.9
+      ],
+      [
+        9.900000000000006,
+        95.9
+      ],
+      [
+        181.9,
+        95.9
+      ]
+    ],
+    "corner_centers": [
+      [
+        9.900000000000006,
+        12.900000000000006
+      ],
+      [
+        9.900000000000006,
+        178.9
+      ],
+      [
+        181.9,
+        12.900000000000006
+      ],
+      [
+        181.9,
+        178.9
+      ]
+    ],
+    "corner_clear_radius_mm": 13.0,
+    "board_origin": [
+      80.15,
+      88.28,
+      4.0
+    ],
+    "board_rotation_deg": 90,
+    "board_footprint_lower_left": [
+      35.7,
+      88.28
+    ],
+    "board_hole_centers": [
+      [
+        64.275,
+        95.9
+      ],
+      [
+        44.59,
+        95.9
+      ],
+      [
+        64.275,
+        136.54
+      ],
+      [
+        44.59,
+        136.54
+      ]
+    ],
+    "lever_hole_centers": [
+      [
+        103.4,
+        95.9
+      ],
+      [
+        122.4,
+        95.9
+      ]
+    ],
+    "lever_body_center": [
+      112.9,
+      100.9
+    ],
+    "insert_pilot_mm": 4.0,
+    "insert_depth_mm": 4.0,
+    "pocket_floor_mm": 0.0,
+    "insert_bores_through": true,
+    "insert_lead_in_depth_mm": 0.35,
+    "insert_lead_in_top_diameter_mm": 4.7,
+    "nut_left_body_edge_x_mm": 100.9,
+    "vertical_cross_right_edge_x_mm": 100.9,
+    "board_under_socket_collision_volume_mm3": 0.0,
+    "open_area_percent": 64.5,
+    "matrix_route_mm": 39.4,
+    "matrix_available_mm": 50.8,
+    "controller_route_mm": 41.4,
+    "controller_available_mm": 100,
+    "ribbon_route_mm": 219.1,
+    "ribbon_available_mm": 254,
+    "status": "Geometry validated; no physical print/insert/harness fit test performed."
+  }
+}

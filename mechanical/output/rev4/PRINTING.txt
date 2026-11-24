@@ -1,0 +1,152 @@
+MATRIX OPEN FRAME - REVISION 4
+
+Latest requested changes:
+  - Uniform 4 mm thickness, with no raised PCB or lever-connector posts.
+  - PCB and lever connector seat directly on the frame at Z=4 mm.
+  - Six insert holes run all the way through the frame.
+  - Each hole has a shallow conical receiver on its top face.
+  - Lever connector translated 14.5 mm left toward the PCB, without rotation.
+    Its modeled left long body edge touches the vertical crossmember's right
+    edge at X=100.9 mm. Lever screws stay on the horizontal centerline.
+  - Corner cutouts reduced to 13 mm radius / 26 mm diameter, centered on the
+    factory corner insert positions. Detached corner tips are omitted so the
+    cutouts remain open. Magnetic standoffs attach to the panel itself.
+
+PRINT FILES
+
+rear-frame-v4.stl
+  Main frame, 191.8 x 191.8 x 4 mm. Border 12 mm wide, main cross 10 mm,
+  shorter upper PCB branch 8 mm. About 64.5% open area, excluding corner cuts.
+  Four midpoint M3 clearance/countersunk holes attach it to the panel.
+
+m2-5-heat-set-sizing-coupon.stl
+  44 x 18 x 4 mm test coupon (raised labels add 0.38 mm locally).
+  Three labeled through bores: 3.8, 4.0 and 4.2 mm. Same top lead-ins as the
+  real frame. Print first to check your actual inserts/material/printer.
+
+electronics-fit-check-v4.stl
+  108 x 57 x 4 mm open skeleton containing all six mounting holes.
+  Check PCB hole pitch, 19 mm lever pitch, seating and actual leads first.
+  It is only a fit check, not the final frame.
+
+INSERTS AND RECEIVERS
+
+Six M2.5 heat-set inserts. Default through bore is 4.0 mm diameter, suitable
+for the previously selected 4.6 mm outside-diameter insert family after heat
+setting. M2.5 is only the internal thread size; check the outside diameter
+against the sizing coupon if using a different insert.
+
+The top conical receiver is 0.35 mm deep, widening from 4.0 to 4.7 mm diameter
+(90-degree included cone). This is a lead-in, not a counterbore or screw seat.
+No printed floor remains in any of the six holes.
+
+To keep both frame faces flush, use inserts no longer than 4 mm. CNC Kitchen
+offers M2.5 x 4 mm inserts. If using the earlier 5.7 mm long inserts, a top-flush
+installation protrudes 1.7 mm beneath this frame. Check the real panel cavity
+at each location, and do not seat longer inserts against the matrix PCB.
+Install inserts before attaching the frame to the matrix.
+
+Nominal screws:
+  4 x M3 x 8 mm countersunk screws for panel midpoint inserts. About 4 mm
+  projection below the frame; verify real panel thread depth before tightening.
+  Printed clearance 3.4 mm; top countersink 6.4 mm, depth 1.5 mm.
+
+  4 x M2.5 x 6 mm screws for the controller. With a 1.6 mm PCB these extend
+  4.4 mm below the PCB: about 0.4 mm below the frame underside if no washer.
+  A thin washer can reduce that projection; verify against the actual insert.
+
+  2 x M2.5 x 6 mm screws plus thin washers for the lever connector. Assuming
+  2.2 mm ears and 0.4 mm washers, thread engagement is 3.4 mm. Actual ear
+  thickness/underside seating was not measured. Confirm seating and screw
+  length on the fit check; neither component should bend as screws tighten.
+
+ORIENTATION AND CABLES
+
+Match the rear-view drawing: controller left, portrait orientation; USB/buttons
+at bottom and HUB75 at top. Lever connector right, four-port end above the
+horizontal centerline. Panel power is upper right; HUB75 input is lower left.
+PCB position/inset and its four mounting centers are unchanged from V3.
+
+Planar route estimates after moving the lever connector:
+  Matrix power:      39.4 mm planned / 50.8 mm supplied
+  Controller power:  41.4 mm planned / 100 mm supplied
+  HUB75 ribbon:     219.1 mm planned / 254 mm supplied
+
+These are drawn centerline estimates. Plug takeoffs, vertical travel and real
+bend radius consume slack. Dry-fit the actual harness. The ribbon runs around
+the left of the PCB through open frame areas. The Blender cable collection
+is hidden by default and can be enabled as an illustrative route.
+
+Nominal modeled closed lever body reaches Z=17.5 mm, with levers about 18.7 mm.
+Actual open-lever sweep, connected IDC plug and ribbon bend may project farther.
+Choose magnetic-standoff height after fitting the actual components.
+
+PRINT AND ASSEMBLE
+
+1. Print the insert sizing coupon using final material/settings. Check that
+   the insert installs straight, holds securely and leaves the required face
+   flush. Set it over a clearance hole so a long insert cannot hit the bench.
+2. Print the electronics fit-check skeleton and verify all six hole positions,
+   seating, underside connector clearance and cables with the real parts.
+3. Print the full frame flat side down, conical receivers upward, at 100% scale
+   in millimeters. Suggested start: PETG, 0.2 mm layers, 4-5 walls, 5 top/bottom
+   layers, 25-35% infill, supports off.
+4. Heat-set inserts before mounting to the matrix. Let the plastic cool, check
+   the underside and screw projections, then attach via the four midpoint M3
+   screws. Fit the PCB and connector without bending either.
+5. Route the harness, then install your magnetic standoffs into the exposed
+   corner inserts. Two small bottom-border notches can locate a supply tie.
+
+VALIDATION AND FIT ASSUMPTIONS
+
+All three exported printable STLs reload as watertight solids with consistent
+winding. Each CSG solid is one connected body. The main part has exactly 4 mm
+Z extent. Checks confirm six through bores, 13 mm corner keepouts, centerline
+alignment, and exact modeled lever-body/vertical-crossmember edge alignment.
+
+The official board's underside HUB75 socket footprint does not intersect the
+frame. Its nominal bottom now reaches Z=-1.55 mm, through an open area of the
+frame, rather than resting on plastic. The modeled panel PCB top is Z=-6.7 mm.
+Real panel components and ribbon/plug clearances still need a physical check.
+
+Board mounting pitch: 19.685 x 40.64 mm in this orientation, from Adafruit PCB
+source. Nominal board inset is still 23 mm from an inner plastic frame edge
+estimated 12.7 mm from the outside edge. Lever pitch is your approximately
+19 mm measurement. Body/ear envelope and seating remain approximate reference
+dimensions, with 13.5 mm interpreted as height. No physical print, harness,
+thermal or magnetic-load test has been performed.
+
+BLENDER, DRAWING AND SOURCE
+
+matrix-rear-frame-v4.blend opens to the V4 assembly. Only the object in
+"V4 PRINT - frame only" is printable. Other collections are reference panel,
+electronics, fasteners and schematic cables. The board is Adafruit's official
+mesh; the lever body and panel are illustrative. STL exports are authoritative
+for the printed geometry.
+
+layout-v4-actual-size.svg is an A4 reference drawing with overlays. Print at
+100% and verify its 100 mm calibration line. The PNG is for on-screen review.
+
+Editable source is in source/: rev4-parameters.json, build_mount_v4.py,
+csg.py and draw_layout_v4.py. Install source/requirements.txt in Python, run
+build_mount_v4.py, then draw_layout_v4.py. Outputs go to source/output/rev4/.
+Generated OpenSCAD files contain the same geometry with baked dimensions;
+change the JSON and regenerate to alter parameters.
+
+REFERENCES AND ATTRIBUTION
+
+User panel drawing: 1484_P6_192X192mm-32x32pixel_2021 (1).pdf
+User photographs, connector image, sketches and supplied measurements.
+
+Adafruit MatrixPortal S3 PCB source:
+https://github.com/adafruit/Adafruit-MatrixPortal-S3-PCB
+Adafruit official board 3D reference:
+https://github.com/adafruit/Adafruit_CAD_Parts/tree/main/5778%20Matrix%20Portal%20S3
+Board designs credited to Adafruit Industries and Limor Fried/Ladyada.
+PCB reference licensed CC BY-SA 3.0; see included Adafruit license.
+The printable frame is original geometry generated for this request.
+
+4 mm long M2.5 insert example:
+https://cnckitchenus.store/products/gewindeeinsatz-threaded-insert-m2-5-standard-100-stk-pcs
+Earlier 5.7 mm long insert (requires underside projection in V4):
+https://www.ruthex.de/en/products/ruthex-gewindeeinsatz-m2-5-70-stuck-rx-m2-5x5-7-messing-gewindebuchsen

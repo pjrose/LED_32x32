@@ -1,0 +1,20 @@
+# Local Python CAD dependencies (65 MB installed wheels)
+mechanical/.cad-deps/
+
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Blender auto-backup files
+*.blend1
+*.blend2
+
+# Personal phone reference photos (contain embedded GPS/EXIF metadata)
+mechanical/reference/PXL_*
+mechanical/reference/photos-overview.jpg
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

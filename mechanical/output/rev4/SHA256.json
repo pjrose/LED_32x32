@@ -1,0 +1,23 @@
+{
+  "PRINTING.txt": "936a589d7a5cc95c7e7b78f8b02a416dd8cb6c5ef0a2b800ff353d4bfb3c4254",
+  "Adafruit-CC-BY-SA-3.0.txt": "075dad5e5fc96c27014fabc269f4f5732909cffd178a486f546d982b6cf86b74",
+  "rear-frame-v4.stl": "4a4519c897de4c348868422f8690a616a859033ad0f5a5ffa10eb08c490ceb70",
+  "rear-frame-v4.scad": "85ee0554501340158cac70b31b88d760dc8c61ea335e83820d53522e93b9f409",
+  "m2-5-heat-set-sizing-coupon.stl": "7d5a93da36189030eaae1e52ac2a85a7a6469a02dd1494dc0a32e1fa6e09f048",
+  "m2-5-heat-set-sizing-coupon.scad": "befc451bb3c1a5871a6a65920f07f3fc90b36a3223618237b22e8945669ebe0f",
+  "electronics-fit-check-v4.stl": "480f35a53e825bac010c361719a37db3ddc327ab6d66711387331c9f6abc7c23",
+  "electronics-fit-check-v4.scad": "834e4acf70b9c2ed6099b7916b648aacd75c2f7cb7c6ed9ab69eee2bf709b7ed",
+  "matrix-rear-frame-v4.blend": "f2058610121b214624fa8f7315cebc1539c28c77f00a8167444fb8baa85fd298",
+  "layout-v4-actual-size.svg": "d84ebc7134e0526a0e4e56b2b43dc3bd6926dc401dc09c1bbcea5335fcad5660",
+  "layout-v4-dimensioned.png": "ae04d42e0981480bd924528098efb7bea4733202d31f7cae4e8e2e6fb4e3c364",
+  "assembly-v4.png": "07805880180fefad535582a1d279f97a856cf2772b1c0b08ce89c7ee11f59921",
+  "printed-frame-v4.png": "213803335b08af2af3d9cc27e57fc3eba96b01c21863399236e8aa3c8f4ddd73",
+  "rear-plan-v4.png": "bec759d17c4f6045cc486f3a0ad1066fcf8ba5f7b2ad46850fcc2e833854c6cb",
+  "validation.json": "fee01c7a6fc381be40075876afbf7de1e9acc599831c0b3d91e6711356b5056b",
+  "parameters-used.json": "fa413d11904b5184610474f038056903e6ef8ca1f7ce747ca90dca8dd261108e",
+  "source/build_mount_v4.py": "3d632f1bd06663d940f602d86dc12f9a6baffa408936023fd8e444879d9260e8",
+  "source/csg.py": "5671480ff7d2dce2b84717819a1b390c075e1503f6a35bf8132c84a7cfa4915a",
+  "source/draw_layout_v4.py": "b17e15041592ac112f279f428ae57febf916493498b6d513933bd53e1e8557aa",
+  "source/requirements.txt": "15c4c20b326f14c77af86c088309c28930c708915480f5a101637699022ee687",
+  "source/rev4-parameters.json": "fa413d11904b5184610474f038056903e6ef8ca1f7ce747ca90dca8dd261108e"
+}

@@ -1,0 +1,217 @@
+{
+  "rear-carrier": {
+    "file": "rear-carrier.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "triangles": 12534,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        191.8000030517578,
+        191.8000030517578,
+        23.5
+      ]
+    ],
+    "dimensions_mm": [
+      191.8000030517578,
+      191.8000030517578,
+      23.5
+    ],
+    "volume_cm3": 68.98332048349151
+  },
+  "pcb-edge-clamp-print-4": {
+    "file": "pcb-edge-clamp-print-4.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "triangles": 400,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        8.800000190734863,
+        6.0,
+        2.4000000953674316
+      ]
+    ],
+    "dimensions_mm": [
+      8.800000190734863,
+      6.0,
+      2.4000000953674316
+    ],
+    "volume_cm3": 0.1008321813445704
+  },
+  "insert-sizing-coupon": {
+    "file": "insert-sizing-coupon.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "triangles": 3862,
+    "bounds_mm": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        95.0,
+        22.0,
+        7.78000020980835
+      ]
+    ],
+    "dimensions_mm": [
+      95.0,
+      22.0,
+      7.78000020980835
+    ],
+    "volume_cm3": 14.770508402345445
+  },
+  "electronics-fit-check": {
+    "file": "electronics-fit-check.stl",
+    "watertight": true,
+    "winding_consistent": true,
+    "bodies": 1,
+    "triangles": 7002,
+    "bounds_mm": [
+      [
+        5.5,
+        0.0,
+        0.0
+      ],
+      [
+        88.94999694824219,
+        89.5,
+        8.600000381469727
+      ]
+    ],
+    "dimensions_mm": [
+      83.44999694824219,
+      89.5,
+      8.600000381469727
+    ],
+    "volume_cm3": 13.633974644037977
+  },
+  "layout": {
+    "coordinates": "rear view, X right, Y up; mm from bottom left; Z=0 at panel rear mounting face",
+    "panel_midpoint_screws": [
+      [
+        95.9,
+        12.900000000000006
+      ],
+      [
+        95.9,
+        178.9
+      ],
+      [
+        9.900000000000006,
+        95.9
+      ],
+      [
+        181.9,
+        95.9
+      ]
+    ],
+    "magnetic_insert_centers": [
+      [
+        9.900000000000006,
+        12.900000000000006
+      ],
+      [
+        9.900000000000006,
+        178.9
+      ],
+      [
+        181.9,
+        12.900000000000006
+      ],
+      [
+        181.9,
+        178.9
+      ]
+    ],
+    "nut_insert_centers": [
+      [
+        80.0,
+        57.5
+      ],
+      [
+        80.0,
+        76.5
+      ]
+    ],
+    "board_locators": [
+      [
+        121.875,
+        83.88
+      ],
+      [
+        141.56,
+        83.88
+      ],
+      [
+        121.875,
+        43.24
+      ],
+      [
+        141.56,
+        43.24
+      ]
+    ],
+    "board_m3_clamps": [
+      [
+        101.5,
+        56.0,
+        1
+      ],
+      [
+        101.5,
+        48.5,
+        1
+      ],
+      [
+        154.95,
+        71.5,
+        -1
+      ],
+      [
+        154.95,
+        51.5,
+        -1
+      ]
+    ],
+    "insert_pilot_mm": 4.2,
+    "insert_length_mm": 6.0,
+    "board_connector_references": {
+      "power": [
+        110.3815,
+        42.605
+      ],
+      "HUB75": [
+        128.225,
+        34.35
+      ],
+      "USB": [
+        114.255,
+        86.42
+      ]
+    },
+    "matrix_power_route_mm": 21.3,
+    "matrix_power_available_mm": 50.8,
+    "controller_power_route_mm": 35.8,
+    "ribbon_route_centerline_mm": 215.4,
+    "ribbon_available_mm": 254.0,
+    "ribbon_reserve_mm": 38.6,
+    "nut_top_estimate_mm": 20.9,
+    "board_official_unplugged_top_mm": 19.2135,
+    "magnetic_mount_plane_mm": 23.5,
+    "status": "FIT-CHECK PROTOTYPE. Insert OD, actual nut ear height/footprint, magnet size and connected IDC height not verified."
+  }
+}
